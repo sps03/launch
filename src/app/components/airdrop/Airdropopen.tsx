@@ -21,8 +21,8 @@ const Airdropopen = () => {
             </a>
           </div>
           <div className="mt-6 text-xs font-medium leading-6 text-white max-md:max-w-full">
-            $PUSSY's goal is to deliver products that work and don't cause user
-            issues or headaches. We understand the community's frustration with the
+            $PUSSY&apos;s goal is to deliver products that work and don&apos;t cause user
+            issues or headaches. We understand the community&apos;s frustration with the
             delayed release of $PUSSY-SWAP and are working hard to get it released.
             We will make sure $PUSSY-SWAP is released within Q1 as stated on the
             roadmap and will put the DAO revision into high gear after release.
