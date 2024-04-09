@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Airdropopen = () => {
   return (
     <div className='p-8 flex flex-row gap-10'>
 
-
       {/* coldivs */}
       <div>
-        <div className="flex z-10 flex-col self-center mt-0  max-w-full w-[680px] max-md:mt-0 max-md:mb-10">
+        <div className="flex z-10 flex-col self-center mt-0 max-w-full w-[680px] max-md:mt-0 max-md:mb-10">
           <div className="flex gap-5 justify-between w-full font-bold max-md:flex-wrap max-md:max-w-full">
             <div className="flex gap-5 text-2xl text-white">
               <img
@@ -73,7 +72,7 @@ const Airdropopen = () => {
         <div className="flex flex-col self-end max-w-full text-base w-[680px]">
           
           
-          <div className="flex flex-col myfont justify-start text-start px-8 pt-8 pb-16 mt-7 text-xl  text-white border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5 max-md:max-w-full">
+          <div className="flex flex-col myfont justify-start text-start px-8 pt-8 pb-16 mt-7 text-xl text-white border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5 max-md:max-w-full">
             <div className="max-md:max-w-full">Allocations(0)</div>
             <img src="/pussyopenvect.png" alt="" className='py-2' />
             <div className="self-center mt-12 font-medium max-md:mt-10">
@@ -83,62 +82,56 @@ const Airdropopen = () => {
         </div>
       </div>
 
-
-
       {/* row */}
       <div>
-      <div className="flex flex-col self-end mt-10 max-w-full w-[505px] max-md:mt-10">
-      <div className="flex flex-col px-8 pt-11 pb-20 text-xs  text-start font-medium border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5 max-md:max-w-full">
-        <div className="text-xl myfont text-start text-white">
-          Waiting for airdrop start
+        <div className="flex flex-col self-end mt-10 max-w-full w-[505px] max-md:mt-10">
+          <div className="flex flex-col px-8 pt-11 pb-20 text-xs text-start font-medium border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5 max-md:max-w-full">
+            <div className="text-xl myfont text-start text-white">
+              Waiting for airdrop start
+            </div>
+            <img src="/pussyopenvect.png" alt="" className='py-2' />
+            <div className="shrink-0 mt-5 h-2.5 bg-zinc-700 rounded-[70px]" />
+            <div className="flex gap-5 justify-between mt-3 text-white">
+              <div>0</div>
+              <div>0 PUSSY</div>
+            </div>
+            <div className="flex gap-5 justify-between mt-10 max-md:mt-10">
+              <div className="text-white">Your Allocation</div>
+              <div className="text-right text-neutral-400">0</div>
+            </div>
+            <img src="/pussyopenvect.png" alt="" className='py-2' />
+            <div className="flex gap-5 justify-between mt-3.5 mb-60 max-md:mb-10">
+              <div className="text-white">Your Claimed</div>
+              <div className="text-right text-neutral-400">0</div>
+            </div>
+          </div>
+          <div className="flex gap-3 self-start mt-8">
+            <a href="">
+              <img
+                loading="lazy"
+                srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                className="shrink-0 border border-solid aspect-square border-white border-opacity-10 w-[60px]"
+              />
+            </a>
+            <a href="">
+              <img
+                loading="lazy"
+                src='/twitter.png'
+                className="shrink-0 border border-solid aspect-square border-white border-opacity-10 w-[60px]"
+              />
+            </a>
+            <a href="">
+              <img
+                loading="lazy"
+                srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
+                className="shrink-0 border border-solid aspect-square border-white border-opacity-10 w-[60px]"
+              />
+            </a>
+          </div>
         </div>
-        <img src="/pussyopenvect.png" alt="" className='py-2' />
-        <div className="shrink-0 mt-5 h-2.5 bg-zinc-700 rounded-[70px]" />
-        <div className="flex gap-5 justify-between mt-3 text-white">
-          <div>0</div>
-          <div>0 PUSSY</div>
-        </div>
-        <div className="flex gap-5 justify-between mt-10 max-md:mt-10">
-          <div className="text-white">Your Allocation</div>
-          <div className="text-right text-neutral-400">0</div>
-        </div>
-        <img src="/pussyopenvect.png" alt="" className='py-2' />
-        <div className="flex gap-5 justify-between mt-3.5 mb-60 max-md:mb-10">
-          <div className="text-white">Your Claimed</div>
-          <div className="text-right text-neutral-400">0</div>
-        </div>
-      </div>
-      <div className="flex gap-3 self-start mt-8">
-        <a href="">
-        <img
-          loading="lazy"
-          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/698d760f8b51d64331342bf35f4a2d7a92e0e3437b2a0166efdd6369b39c64fb?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-          className="shrink-0 border border-solid aspect-square border-white border-opacity-10 w-[60px]"
-        />
-        </a>
-        <a href="">
-        <img
-          loading="lazy"
-          src='/twitter.png'
-          // srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/506d59f5f07ed022887a51c08aa3daafe0167e19e290a3da7b4f33cfed0af391?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-          className="shrink-0 border border-solid aspect-square border-white border-opacity-10 w-[60px]"
-        />
-        </a>
-        <a href="">
-        <img
-          loading="lazy"
-          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/935946c88d2421b8451dbe4ae2342be406ff7bcbcfba7909289895ca9c723551?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"
-          className="shrink-0 border border-solid aspect-square border-white border-opacity-10 w-[60px]"
-        />
-        </a>
       </div>
     </div>
-      </div>
-
-
-
-    </div>
-  )
+  );
 }
 
-export default Airdropopen
+export default Airdropopen;
