@@ -159,7 +159,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sm:justify-start mt-16 text-white justify-center flex p-4 myfont sm:p-8 text-3xl'>
+        <div className='sm:justify-start mt-16 text-center text-white justify-center flex p-4 myfont sm:p-8 text-3xl'>
           A Growing Protocol Ecosystem
         </div>
         <div className="text-base text-center sm:text-left justify-center sm:px-8 px-4 text-zinc-700">
