@@ -1,6 +1,12 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react';
 
 const Lplistmain = () => {
+  const [amount, setAmount] = useState('0.0');
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setAmount(event.target.value);
+  };
   return (
     <div className='flex flex-row px-10 py-2 gap-5'>
       <div>
@@ -380,20 +386,27 @@ const Lplistmain = () => {
                 <div>220 BNB</div>
               </div>
               <div className="mt-8 text-base leading-4 myfont text-white">Amount</div>
-              <div className="flex gap-5  px-3 py-4 mt-3 justify-between text-base leading-4 whitespace-nowrap rounded-lg border-solid bg-zinc-900 border-[3px] border-zinc-700">
-                <div className="text-zinc-700 text-start">0.0</div>
-                <div className="font-black text-purple-600 text-right">MAX</div>
-              </div>
+      <div className="flex gap-5  px-3 py-4 mt-3 justify-between text-base leading-4 whitespace-nowrap rounded-lg border-solid bg-zinc-900 border-[3px] border-zinc-700">
+        <input
+          type="text"
+          value={amount}
+          onChange={handleChange}
+          className="text-zinc-700 text-start bg-transparent border-none outline-none w-full"
+        />
+        <div className="font-black text-purple-600 text-right cursor-pointer" onClick={() => setAmount('MAX')}>
+          MAX
+        </div>
+      </div>
               <div className="flex gap-5 justify-between mt-3 w-full text-xs">
                 <div className="flex gap-3">
                   <a href='' className="justify-center px-9 py-5 font-bold text-white bg-fuchsia-500 rounded-[50px]">
                     Connect Wallet
                   </a>
-                  <div className="my-auto font-medium text-purple-600">Auto Buy</div>
+                  <a href='' className="my-auto font-medium text-purple-600">Auto Buy</a>
                 </div>
-                <div className="my-auto font-bold text-fuchsia-500 underline">
+                 <a href='' className="my-auto font-bold text-fuchsia-500 underline">
                   Affiliate detail
-                </div>
+                </a>
               </div>
             </div>
             </div>
@@ -476,12 +489,16 @@ const Lplistmain = () => {
         Sign up our mailing list to receive our new presales, features, tips and
         reviews for next 100x projects.
       </div>
-      <div className="justify-center items-start px-3 py-4 mt-4 whitespace-nowrap rounded-lg border-solid bg-zinc-900 border-[3px] border-zinc-700 leading-[100%] text-zinc-700">
-        example@gmail.com
-      </div>
-      <div className="justify-center self-start px-9 py-5 mt-4 text-xs font-bold whitespace-nowrap bg-fuchsia-500 rounded-[50px]">
+      <div className="grow justify-center items-start px-3.5 py-4 mt-2 text-base font-medium leading-4 rounded-2xl border-4 border-solid text-zinc-700 bg-zinc-900 border-zinc-700 w-fit max-md:pr-5 max-md:max-w-full">
+      <input
+        type="text"
+        placeholder="example@gmail.com"
+        className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none"
+      />
+    </div>
+      <a href='' className="justify-center self-start px-9 py-5 mt-4 text-xs font-bold whitespace-nowrap bg-fuchsia-500 rounded-[50px]">
         Subscribe
-      </div>
+      </a>
     </div>
 
       </div>

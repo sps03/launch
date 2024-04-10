@@ -49,9 +49,9 @@ const Pscard = () => {
               </div>
               <div className="flex flex-col">
                 <div className="self-end font-medium text-zinc-700">40 BNB</div>
-                <div className="justify-center px-9 py-5 mt-7 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-9 py-5 mt-7 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
                   View Token
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -100,9 +100,9 @@ const Pscard = () => {
               </div>
               <div className="flex flex-col">
                 <div className="self-end font-medium text-zinc-700">40 BNB</div>
-                <div className="justify-center px-9 py-5 mt-7 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-9 py-5 mt-7 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
                   View Token
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -151,9 +151,9 @@ const Pscard = () => {
               </div>
               <div className="flex flex-col">
                 <div className="self-end font-medium text-zinc-700">40 BNB</div>
-                <div className="justify-center px-9 py-5 mt-7 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-9 py-5 mt-7 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
                   View Token
-                </div>
+                </a>
               </div>
             </div>
           </div>
