@@ -12,11 +12,11 @@ const Page = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   const handleNextStep = () => {
-    setCurrentStep(currentStep + 1); // Move to the next step
+    setCurrentStep(currentStep + 1);
   };
 
   const handlePreviousStep = () => {
-    setCurrentStep(currentStep - 1); // Move to the previous step
+    setCurrentStep(currentStep - 1); 
   };
 
   return (

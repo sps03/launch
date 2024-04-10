@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Multi1 from '../components/multisender/Multi1'
 import Multi2 from '../components/multisender/Multi2'
 
-const page = () => {
+const Page = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   const handleNextStep = () => {
@@ -14,7 +14,7 @@ const page = () => {
   const handlePreviousStep = () => {
     setCurrentStep(currentStep - 1); // Move to the previous step
   };
-  
+
   return (
     <div>
       <div className='flex flex-row bg-black'>
@@ -33,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
