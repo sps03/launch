@@ -18,7 +18,7 @@ const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
     onNextStep(); // Call the callback function to proceed to the next step
   };
   return (
-    <div className='flex sm:p-8 p-6 flex-row gap-3'>
+    <div className='flex sm:p-8 p-4 flex-row gap-3'>
       {/* <Sidebar /> */}
       
 
@@ -31,7 +31,7 @@ const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
       </div>
 
       
-      <div className='flex flex-row px-5 py-6 border-solid bg-zinc-900 border-[6px] w-full border-zinc-700 max-w-full max-h-full rounded-[30px]'>
+      <div className='sm:flex  flex-row sm:px-5 sm:py-6 border-solid bg-zinc-900 border-[6px] w-full border-zinc-700 max-w-full max-h-full rounded-[30px]'>
         <div className='sm:flex hidden w-[40%]'>
         <div className="sm:flex hidden flex-col grow shrink-0 basis-0 w-[50%] h-[60%]">
       <div className="flex gap-3">
@@ -104,12 +104,12 @@ const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
         </div>
 
         <div>
-          <img src="/vectors1.png" alt="" className='px-8 '/>
+          <img src="/vectors1.png" alt="" className='sm:px-8 hidden'/>
         </div>
 
 
         <div>
-        <div className="flex flex-col  grow mt-4 max-md:mt-10 max-md:max-w-full">
+        <div className="sm:flex sm:flex-col sm:p-2 p-4 w-full grow mt-4 max-md:mt-10 max-md:max-w-full">
           <div className="text-xl myfont leading-4 text-white max-md:max-w-full">
             Token Address
           </div>
@@ -154,7 +154,7 @@ const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
               </div>
             </div>
             <div className="flex flex-col flex-1 grow shrink-0 self-start text-s leading-4 basis-0 w-fit">
-              <div className="self-end text-purple-600">
+              <div className="self-end hidden sm:flex text-purple-600">
               Users will pay with <span className='font-bold'> {currency ? ` ${currency}` : ''} </span>for your token
               </div>
               <div className="flex gap-4 mt-5 font-semibold text-white whitespace-nowrap">
@@ -187,29 +187,32 @@ const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
               </div>
             </div>
           </div>
+          <div className="self-end mt-4 sm:hidden text-purple-600">
+              Users will pay with <span className='font-bold'> {currency ? ` ${currency}` : ''} </span>for your token
+              </div>
           <div className="flex gap-4 mt-11 text-white max-md:flex-wrap max-md:mt-10">
             <div className="flex flex-col">
               <div className="text-xl myfont leading-4">Fee Options</div>
               <div className='flex flex-row gap-3'>
-              <a href='' className="justify-center px-5 py-6 mt-4 text-s font-semibold leading-4 border border-solid border-zinc-700 rounded-[50px]">
+              <a href='' className="justify-center px-3.5 py-6 sm:px-5 sm:py-6 mt-4 text-s font-semibold leading-4 border border-solid border-zinc-700 rounded-[50px]">
                 <span className="font-extrabold">5%</span> 
-                <span className="font-medium">USDC raised only</span>
+                <span className="font-medium ">USDC raised only</span>
               </a>
-              <a href='' className="justify-center px-5 py-6 mt-4 text-s font-semibold leading-4 border border-solid border-zinc-700 rounded-[50px] ">
+              <a href='' className="justify-center px-3.5 py-6 sm:px-12 sm:py-6 mt-4 text-s font-semibold leading-4 border border-solid border-zinc-700 rounded-[50px] ">
                   Others
                 </a>
               </div>
             </div>
             <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
-              <div className="self-center myfont text-xl leading-4">Listing Options</div>
-              <div className="flex gap-4 px-px mt-4 text-s font-semibold leading-4 max-md:flex-wrap">
+              <div className=" myfont text-xl leading-4">Listing Options</div>
+              <div className="flex flex-row sm:gap-4 gap-3 mt-4 sm:text-s text-xs font-semibold  ">
                 {/* <a href='' className="justify-center px-14 py-7 whitespace-nowrap border border-solid border-zinc-700 rounded-[50px] max-md:px-5">
                   Others
                 </a> */}
-                <a href='' className="justify-center px-6 py-6 border border-solid border-zinc-700 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-7 py-5 sm:px-8 sm:py-6 border border-solid border-zinc-700 rounded-[50px] ">
                   Auto Listing
                 </a>
-                <a href='' className="justify-center px-6 py-6 border border-solid border-zinc-700 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-7 py-5 sm:px-8 sm:py-6 border border-solid border-zinc-700 rounded-[50px] ">
                   Manual listing
                 </a>
               </div>
@@ -226,7 +229,7 @@ const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
               Enable Affiliate
             </a>
           </div>
-          <button onClick={handleNextStep} className="justify-center self-start px-9 py-5 mt-11 text-s font-bold text-white whitespace-nowrap bg-purple-600 rounded-[50px] max-md:px-5 max-md:mt-10">
+          <button onClick={handleNextStep} className="justify-center self-start px-8 py-4 sm:px-9 sm:py-5 sm:mt-11 text-s font-bold text-white whitespace-nowrap bg-purple-600 rounded-[50px]  max-md:mt-10">
             Next
           </button>
         </div>

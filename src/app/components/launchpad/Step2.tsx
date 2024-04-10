@@ -25,16 +25,16 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
     setIsChecked2(!isChecked2);
   };
   return (
-    <div className='flex p-8 flex-row gap-3'>
+    <div className='flex sm:p-8 p-4 flex-row gap-3'>
       {/* <Sidebar /> */}
       
       <div>
       <div>
         {/* <Header /> */}
       </div>
-      <div className='flex flex-row px-5 py-6 border-solid bg-zinc-900 border-[6px] w-full border-zinc-700 max-w-full max-h-full rounded-[30px]'>
-        <div className='flex w-[40%]'>
-        <div className="flex flex-col grow shrink-0 basis-0 w-[50%]">
+      <div className='flex flex-row sm:px-5 sm:py-6 border-solid bg-zinc-900 border-[6px] w-full border-zinc-700 max-w-full max-h-full rounded-[30px]'>
+        <div className='sm:flex hidden w-[40%]'>
+        <div className="sm:flex hidden flex-col grow shrink-0 basis-0 w-[50%]">
       <div className="flex gap-3">
         <div className="flex flex-col text-base font-bold leading-8 text-center text-white whitespace-nowrap">
           <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
@@ -105,19 +105,19 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
         </div>
 
         <div>
-          <img src="/vectorstand.png" alt="" className='px-8'/>
+          <img src="/vectorstand.png" alt="" className='px-8 sm:flex hidden'/>
         </div>
 
         <div>
-      <div className="flex flex-col  grow mt-4 text-xl leading-4 text-white max-md:mt-10 max-md:max-w-full">
+      <div className="sm:flex sm:flex-col p-4 grow mt-4 text-xl leading-4 text-white max-md:mt-10 max-md:max-w-full">
       <div className="max-md:max-w-full myfont">Presale rate</div>
       {/* <div className="justify-center items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
         Ex: DeganMoon
       </div> */}
-      <div className="justify-center items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
+      <div className="justify-center items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700  max-md:max-w-full">
                 <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
               </div>
-      <div className="mt-4 text-s leading-4 text-purple-600 max-md:max-w-full">
+      <div className="mt-4 text-xs sm:text-s leading-4 text-purple-600 max-md:max-w-full">
         if i spend 1 BNB how many tokens will i receive?
       </div>
       <div className="mt-11 max-md:mt-10 max-md:max-w-full myfont">Whitelist</div>
@@ -139,7 +139,7 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
         <div className="flex-auto">softcap (BNB)</div>
         <div className="flex-auto">HardCap (BNB)</div>
       </div>
-      <div className="flex gap-5 mt-3 text-base font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
+      <div className="flex  gap-5 mt-3 text-base font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="grow justify-center items-start px-3.5 py-6 rounded-2xl border-4 border-solid text-zinc-700 bg-zinc-900 border-zinc-700 w-fit max-md:pr-5">
               <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
             </div>
@@ -164,7 +164,7 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
           </div>
     </div>
 
-    <div className="mt-11 myfont max-w-full w-[636px] max-md:mt-10">
+    <div className="mt-11 myfont max-w-full w-full px-4 sm:w-[636px] max-md:mt-10">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">
         <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow text-xl leading-4 text-white max-md:mt-6">
@@ -177,10 +177,10 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
                 className="shrink-0 w-5 aspect-square"
               />
             </div>
-            <div className="mt-10 max-md:mt-10">liquidity (%)</div>
+            <div className="mt-10 px-2 max-md:mt-10">liquidity (%)</div>
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+        <div className="flex flex-col ml-5  sm:w-6/12 w-full max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow max-md:mt-6">
             <div className="text-xl leading-4 text-white">Router</div>
             <div className="flex gap-5 px-4 py-5 mt-4 w-full rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700">
@@ -208,7 +208,7 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
       </div>
     </div>
 
-    <div className="flex gap-5 mt-3 text-base myfont font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
+    <div className="flex px-4 gap-5 mt-3 text-base myfont font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="grow justify-center items-start px-3.5 py-6 rounded-2xl border-4 border-solid text-zinc-700 bg-zinc-900 border-zinc-700 w-fit max-md:pr-5">
               <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
             </div>
@@ -217,7 +217,7 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
             </div>
           </div>
 
-    <div className="flex flex-col justify-center items-start py-7 pr-20 pl-3.5 mt-12 max-w-full text-base font-medium leading-6 text-purple-500 rounded-2xl bg-purple-600 bg-opacity-10 w-[636px] max-md:pr-5 max-md:mt-10">
+    <div className="flex px-6 flex-col justify-center items-start py-7 pr-20 pl-3.5 mt-12 max-w-full text-base font-medium leading-6 text-purple-500 rounded-2xl bg-purple-600 bg-opacity-10 sm:w-[636px] max-md:pr-5 max-md:mt-10">
       <div className="max-md:max-w-full">
         Enter the precentage of raised funds that should be allocated to
         Liquidity on (Min 51% Max 100%)
@@ -228,16 +228,16 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
       </div>
     </div>
 
-    <div className="mt-10 myfont mr-36 text-2xl leading-4 text-white max-md:mr-2.5 max-md:max-w-full">
+    <div className="mt-10 myfont px-4 mr-36 text-2xl leading-4 text-white max-md:mr-2.5 max-md:max-w-full">
       Select start time & end time (UTC)
     </div>
 
 
-    <div className="flex myfont text-s gap-5 text-white mt-11 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+    <div className="flex myfont px-4 text-s gap-5 text-white mt-11 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
         <div className="flex-auto">Start Time</div>
         <div className="flex-auto">End Time</div>
       </div>
-      <div className="flex gap-5 mt-3  text-base font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
+      <div className="flex gap-5 px-4 mt-3  text-base font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="grow justify-center items-start px-3.5 py-6 rounded-2xl border-4 border-solid text-zinc-700 bg-zinc-900 border-zinc-700 w-fit max-md:pr-5">
               <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
             </div>
@@ -246,12 +246,12 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
             </div>
           </div>
 
-      <div className="max-md:max-w-full text-white myfont mt-8">Liquidity lockup (minutes)</div>
-      <div className="justify-center  items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
+      <div className="max-md:max-w-full px-4 text-white myfont mt-8">Liquidity lockup (minutes)</div>
+      <div className="justify-center ml-5 mr-4 items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
             <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
           </div>
 
-          <div className="flex gap-2 mt-3 text-base font-medium leading-4 text-white" onClick={toggleCheckbox2}>
+          <div className="flex gap-2 p-6 mt-3 text-base font-medium leading-4 text-white" onClick={toggleCheckbox2}>
               <div className={`shrink-0 bg-zinc-700 h-[22px] rounded-[40px] w-[22px] cursor-pointer ${isChecked2 ? 'bg-white' : ''}`}>
                 {isChecked2 && <div className="w-2.5 h-2.5 mt-1.5 bg-purple-600 rounded-full m-auto"></div>}
               </div>
@@ -259,7 +259,7 @@ const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
             </div>
 
 
-       <div className="flex gap-3  self-center mt-11 text-xs font-bold text-white whitespace-nowrap max-md:mt-10">
+       <div className="flex gap-3 p-6 self-center mt-11 text-xs font-bold text-white whitespace-nowrap max-md:mt-10">
         <button onClick={handlePreviousStep} className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
           Back
         </button>
