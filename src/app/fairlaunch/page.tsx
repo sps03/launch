@@ -13,7 +13,7 @@ const page = () => {
           <Header />
         </div>
 
-        {/* <Firstpage /> */}
+        <Firstpage />
         <Secondpage />
 
       </div>

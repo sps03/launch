@@ -13,7 +13,7 @@ const page = () => {
           <Header />
         </div>
 
-        {/* <Dutch1 /> */}
+        <Dutch1 />
         <Dutch2 />
 
       </div>
