@@ -1,8 +1,29 @@
-import React from 'react'
+'use client'
+import React,{ useState } from 'react'
 import Sidebar from '../Sidebar'
 import Header from '../Header'
 
-const Step2 = () => {
+interface StepProps {
+  onNextStep: () => void;
+  previousStep: () => void;
+}
+
+const Step2: React.FC<StepProps> = ({ onNextStep, previousStep }) => {
+  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
+
+  const handleNextStep = () => {
+    onNextStep();
+  };
+  const handlePreviousStep = () => {
+    previousStep() // Move to the previous step
+  };
+  const toggleCheckbox = () => {
+    setIsChecked(!isChecked);
+  };
+  const toggleCheckbox2 = () => {
+    setIsChecked2(!isChecked2);
+  };
   return (
     <div className='flex p-8 flex-row gap-3'>
       {/* <Sidebar /> */}
@@ -16,7 +37,7 @@ const Step2 = () => {
         <div className="flex flex-col grow shrink-0 basis-0 w-[50%]">
       <div className="flex gap-3">
         <div className="flex flex-col text-base font-bold leading-8 text-center text-white whitespace-nowrap">
-          <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+          <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
             1
           </div>
           <img
@@ -35,7 +56,7 @@ const Step2 = () => {
         </div>
       </div>
       <div className="flex gap-3">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
           2
         </div>
         <div className="flex-auto my-auto text-xl font-bold leading-4 text-white">
@@ -54,7 +75,7 @@ const Step2 = () => {
         </div>
       </div>
       <div className="flex gap-3">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid bg-slate-600 border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid bg-slate-600 border-slate-600 stroke-[1px]">
           3
         </div>
         <div className="flex-auto my-auto text-xl font-bold leading-4 text-white">
@@ -70,7 +91,7 @@ const Step2 = () => {
         <div className="flex-auto self-start">Let people know who you are</div>
       </div>
       <div className="flex gap-3 self-start whitespace-nowrap">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm font-medium leading-7 text-center text-white rounded-full border border-solid bg-slate-600 border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm font-medium leading-7 text-center text-white rounded-full border border-solid bg-slate-600 border-slate-600 stroke-[1px]">
           4
         </div>
         <div className="my-auto text-xl font-bold leading-4 text-white">
@@ -88,8 +109,8 @@ const Step2 = () => {
         </div>
 
         <div>
-      <div className="flex flex-col myfont grow mt-4 text-xl leading-4 text-white max-md:mt-10 max-md:max-w-full">
-      <div className="max-md:max-w-full">Presale rate</div>
+      <div className="flex flex-col  grow mt-4 text-xl leading-4 text-white max-md:mt-10 max-md:max-w-full">
+      <div className="max-md:max-w-full myfont">Presale rate</div>
       {/* <div className="justify-center items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
         Ex: DeganMoon
       </div> */}
@@ -99,18 +120,22 @@ const Step2 = () => {
       <div className="mt-4 text-s leading-4 text-purple-600 max-md:max-w-full">
         if i spend 1 BNB how many tokens will i receive?
       </div>
-      <div className="mt-11 max-md:mt-10 max-md:max-w-full">Whitelist</div>
+      <div className="mt-11 max-md:mt-10 max-md:max-w-full myfont">Whitelist</div>
       <div className="flex gap-5 self-start mt-4 text-base font-medium leading-4 text-white whitespace-nowrap">
-        <div className="flex flex-1 gap-2">
-          <div className="shrink-0 bg-zinc-700 h-[22px] rounded-[40px] w-[22px]" />
-          <div className="my-auto">Disable</div>
-        </div>
-        <div className="flex flex-1 gap-2">
-          <div className="shrink-0 bg-zinc-700 h-[22px] rounded-[40px] w-[22px]" />
-          <div className="my-auto">Enable</div>
-        </div>
-      </div>
-      <div className="flex gap-5 mt-10 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+                <div className="flex flex-1 gap-2" onClick={toggleCheckbox}>
+                  <div className={`shrink-0 bg-zinc-700 h-[22px] rounded-[40px] w-[22px] cursor-pointer ${isChecked ? 'bg-white' : ''}`}>
+                    {isChecked && <div className="w-2.5 h-2.5 flex justify-center mt-1.5 bg-purple-600 rounded-full m-auto"></div>}
+                  </div>
+                  <div className="my-auto">Disable</div>
+                </div>
+                <div className="flex flex-1 gap-2" onClick={toggleCheckbox}>
+                  <div className={`shrink-0 bg-zinc-700 h-[22px] rounded-[40px] w-[22px] cursor-pointer ${!isChecked ? 'bg-white' : ''}`}>
+                    {!isChecked && <div className="w-2.5 h-2.5 flex justify-center mt-1.5 bg-purple-600 rounded-full m-auto"></div>}
+                  </div>
+                  <div className="my-auto">Enable</div>
+                </div>
+              </div>
+      <div className="flex gap-5 myfont mt-10 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
         <div className="flex-auto">softcap (BNB)</div>
         <div className="flex-auto">HardCap (BNB)</div>
       </div>
@@ -125,7 +150,7 @@ const Step2 = () => {
       <div className="mt-4 text-xs leading-4 text-purple-600 max-md:max-w-full">
         Softcap must be &gt; = 25% of Hardcap!
       </div>
-      <div className="flex gap-5 mt-11 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+      <div className="flex gap-5 myfont mt-11 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
         <div className="flex-auto">Minimum buy (BNB)</div>
         <div className="flex-auto">Maximum Buy (BNB)</div>
       </div>
@@ -209,10 +234,10 @@ const Step2 = () => {
 
 
     <div className="flex myfont text-s gap-5 text-white mt-11 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-        <div className="flex-auto">Minimum buy (BNB)</div>
-        <div className="flex-auto">Maximum Buy (BNB)</div>
+        <div className="flex-auto">Start Time</div>
+        <div className="flex-auto">End Time</div>
       </div>
-      <div className="flex gap-5 mt-3 myfont text-base font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
+      <div className="flex gap-5 mt-3  text-base font-medium leading-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="grow justify-center items-start px-3.5 py-6 rounded-2xl border-4 border-solid text-zinc-700 bg-zinc-900 border-zinc-700 w-fit max-md:pr-5">
               <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
             </div>
@@ -222,23 +247,25 @@ const Step2 = () => {
           </div>
 
       <div className="max-md:max-w-full text-white myfont mt-8">Liquidity lockup (minutes)</div>
-      <div className="justify-center myfont items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
+      <div className="justify-center  items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
             <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
           </div>
 
-      <div className="flex gap-2 myfont mt-3 text-base font-medium leading-4 text-white">
-        <div className="shrink-0 bg-zinc-700 h-[22px] rounded-[40px] w-[22px]" />
-        <div className="flex-auto">Using Vesting Contributor</div>
-       </div>
+          <div className="flex gap-2 mt-3 text-base font-medium leading-4 text-white" onClick={toggleCheckbox2}>
+              <div className={`shrink-0 bg-zinc-700 h-[22px] rounded-[40px] w-[22px] cursor-pointer ${isChecked2 ? 'bg-white' : ''}`}>
+                {isChecked2 && <div className="w-2.5 h-2.5 mt-1.5 bg-purple-600 rounded-full m-auto"></div>}
+              </div>
+              <div className="flex-auto">Using Vesting Contributor</div>
+            </div>
 
 
-       <div className="flex gap-3 myfont self-center mt-11 text-xs font-bold text-white whitespace-nowrap max-md:mt-10">
-        <a href='' className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
+       <div className="flex gap-3  self-center mt-11 text-xs font-bold text-white whitespace-nowrap max-md:mt-10">
+        <button onClick={handlePreviousStep} className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
           Back
-        </a>
-        <a href='' className="justify-center px-9 py-5 bg-purple-600 rounded-[50px] max-md:px-5">
+        </button>
+        <button onClick={handleNextStep} className="justify-center px-9 py-5 bg-purple-600 rounded-[50px] max-md:px-5">
           Next
-        </a>
+        </button>
       </div>
       </div>
 

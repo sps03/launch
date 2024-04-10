@@ -5,7 +5,7 @@ const Token2 = () => {
     <div >
       {/* 1sthalf */}
       <div className=' sm:flex flex-row justify-center px-12 pt-4 gap-5'>
-        <div className="flex flex-col justify-center text-center border-solid bg-zinc-900 border-[6px] border-zinc-700 w-[290px] rounded-[30px]">
+        <div className="flex flex-col justify-center mt-4 text-center border-solid bg-zinc-900 border-[6px] border-zinc-700 w-[290px] rounded-[30px]">
           <div className="flex overflow-hidden relative flex-col items-center px-8 pt-5 pb-20 w-full aspect-[0.82] fill-zinc-700">
             <img
               loading="lazy"
@@ -84,7 +84,7 @@ const Token2 = () => {
 
       {/* 2ndhalf*/}
       <div className=' sm:flex flex-row justify-center px-12 pt-4 sm:pt-4 gap-5'>
-      <div className="flex flex-col justify-center text-center border-solid bg-zinc-900 border-[6px] border-zinc-700 w-[290px]  rounded-[30px]">
+      <div className="flex flex-col justify-center mt-4 text-center border-solid bg-zinc-900 border-[6px] border-zinc-700 w-[290px]  rounded-[30px]">
           <div className="flex overflow-hidden relative flex-col items-center px-8 pt-5 pb-20 w-full aspect-[0.82] fill-zinc-700">
             <img
               loading="lazy"

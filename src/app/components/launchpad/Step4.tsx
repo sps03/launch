@@ -2,7 +2,17 @@ import React from 'react'
 import Sidebar from '../Sidebar'
 import Header from '../Header'
 
-const Step4 = () => {
+interface StepProps {
+  previousStep: () => void;
+}
+
+const Step4: React.FC<StepProps> = ({  previousStep }) => {
+
+  const handlePreviousStep = () => {
+    previousStep() // Move to the previous step
+  };
+
+
   return (
     <div className='flex p-8 flex-row gap-3'>
       {/* <Sidebar /> */}
@@ -16,7 +26,7 @@ const Step4 = () => {
         <div className="flex flex-col grow shrink-0 basis-0 w-[50%]">
       <div className="flex gap-3">
         <div className="flex flex-col text-base font-bold leading-8 text-center text-white whitespace-nowrap">
-          <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+          <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
             1
           </div>
           <img
@@ -35,7 +45,7 @@ const Step4 = () => {
         </div>
       </div>
       <div className="flex gap-3">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
           2
         </div>
         <div className="flex-auto my-auto text-xl font-bold leading-4 text-white">
@@ -54,7 +64,7 @@ const Step4 = () => {
         </div>
       </div>
       <div className="flex gap-3">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
           3
         </div>
         <div className="flex-auto my-auto text-xl font-bold leading-4 text-white">
@@ -70,7 +80,7 @@ const Step4 = () => {
         <div className="flex-auto self-start">Let people know who you are</div>
       </div>
       <div className="flex gap-3 self-start whitespace-nowrap">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
           4
         </div>
         <div className="my-auto text-xl font-bold leading-4 text-white">
@@ -88,83 +98,85 @@ const Step4 = () => {
         </div>
         
         <div>
-        <div className="flex myfont flex-col gap-7 ml-6 grow mt-4 overflow-hidden text-xl leading-4 max-md:mt-10 max-md:max-w-full">
+        <div className="flex myfont flex-col gap-3 ml-6 grow mt-4 overflow-hidden text-xl leading-4 max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto text-white">Total token</div>
             <div className="flex-auto text-right text-purple-500">
               2739720 MOONF
             </div>
           </div>
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="max-w-0 min-h-0" />
           <div className="flex gap-5  text-white max-md:flex-wrap max-md:max-w-full">
             <div>Total name</div>
             <div className="flex-auto text-right">Moonforsure</div>
           </div>
-          
-          <div className="flex gap-5 mt-4 text-white max-md:flex-wrap max-md:max-w-full">
+          <img src="/vectorform.png" alt=""className='py-2' />
+          <div className="flex gap-5  text-white max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto">Total Symbol</div>
             <div className="text-right">MOONF</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto">Total decimals</div>
             <div className="text-right">18</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto">Presale rate</div>
             <div className="flex-auto text-right">10000 MOONF</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 justify-between mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div>Softcap</div>
             <div className="text-right">100 BNB</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 justify-between mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div>Hardcap</div>
             <div className="text-right">200 BNB</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto">Minimum buy</div>
             <div className="text-right">1 BNB</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto">Maximum buy</div>
             <div className="text-right">5BNB</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 justify-between mt-4 text-white whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
             <div>Liquidity</div>
             <div className="text-right">51%</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-3.5 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="my-auto">Start time</div>
             <div className="flex-auto text-right">2021-0622T00:00 (UTC)</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-3.5 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="my-auto">End time</div>
             <div className="flex-auto text-right">2021-06-24T00:00 (UTC)</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 justify-between mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div>Liquidity</div>
             <div className="text-right">5 minutes</div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-3.5 max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto my-auto text-white">
               Liquidity lockup Time
             </div>
+            
             <div className="flex-auto text-right text-purple-500">
               https://www.moonforsuretoken.com
             </div>
           </div>
-          
+          <img src="/vectorform.png" alt=""className='py-2' />
           <div className="flex gap-5 mt-4 text-white max-md:flex-wrap max-md:max-w-full">
             <div className="flex-auto">Description</div>
             <div className="flex-auto text-right">
@@ -179,9 +191,9 @@ const Step4 = () => {
           </div>
         </div>
         <div className="flex gap-3 self-center mt-11 text-xs font-bold text-white whitespace-nowrap max-md:mt-10">
-          <a href='' className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
+          <button onClick={handlePreviousStep} className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
             Back
-          </a>
+          </button>
           <a href='' className="justify-center px-9 py-5 bg-purple-600 rounded-[50px] max-md:px-5">
             Next
           </a>

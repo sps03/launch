@@ -2,7 +2,7 @@ import React from 'react'
 
 const Lplistmain = () => {
   return (
-    <div className='flex flex-row px-10 gap-5'>
+    <div className='flex flex-row px-10 py-2 gap-5'>
       <div>
               <div className="flex flex-col px-8 pt-8 pb-14 border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5 max-md:max-w-full">
               <div className="max-md:max-w-full">
@@ -44,7 +44,7 @@ const Lplistmain = () => {
                         AI-Driven Sniper Platform | Low Tax ⭐️ Pre-Launch Marketing ✅
                         Secured Many Partnerships ✅ Chinese Marketing campaign ✅
                       </div>
-                      <div className="flex gap-2 my-auto">
+                      <div className="flex gap-2 mr-14 my-auto">
                         <img
                           loading="lazy"
                           srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/355b3908ac69d2595613c0e232e465e316b247887071f18a8cc32d5f0e8b2bd0?apiKey=fc314cf36d364dbdb6a0cce0fe9d0082&"

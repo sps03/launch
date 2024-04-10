@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 
-const Sidebar = () => {
+const Sidebar2 = () => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpenAir, setDropdownOpenAir] = useState(false);
@@ -17,7 +17,7 @@ const Sidebar = () => {
   
   return (
     <div>
-      <div className="sm:flex hidden flex-col items-start py-7 px-4 border-r border-solid bg-zinc-900 border-white border-opacity-10 max-w-[265px]">
+      <div className="sm:flex overflow flex-col items-start py-7 px-4 border-r border-solid bg-zinc-900 border-white border-opacity-10 max-w-[240px]">
       <div className="flex gap-2.5 ">
         <img
           loading="lazy"
@@ -205,4 +205,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Sidebar2

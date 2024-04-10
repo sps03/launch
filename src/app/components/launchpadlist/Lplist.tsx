@@ -17,8 +17,8 @@ const Lplist = () => {
             className="self-center mt-4 w-3 border-2 border-purple-600 border-solid aspect-[5.88] stroke-[2px] stroke-purple-600"
           />
         </div>
-        <div className="flex-auto">Advanced Mode</div>
-        <div className="flex-auto">My Contributions</div>
+        <div className="flex-auto hover:font-bold cursor-pointer hover:text-purple-600">Advanced Mode</div>
+        <div className="flex-auto hover:font-bold cursor-pointer hover:text-purple-600">My Contributions</div>
       </div>
     </div>
     <img src="/lpvector.png" alt="" className='py-2 mt-4 w-[1230px]' />

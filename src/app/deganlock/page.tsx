@@ -14,7 +14,7 @@ const page = () => {
           <Header />
         </div>
 
-        <Degans1 />
+        <Degans3 />
 
       </div>
     </div>

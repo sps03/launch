@@ -2,11 +2,11 @@ import React from 'react';
 
 const Airdropopen = () => {
   return (
-    <div className='p-8 flex flex-row gap-10'>
+    <div className='p-8 flex flex-row w-[1240px] gap-10'>
 
       {/* coldivs */}
       <div>
-        <div className="flex z-10 flex-col self-center mt-0 max-w-full w-[680px] max-md:mt-0 max-md:mb-10">
+        <div className="flex z-10 flex-col  self-center mt-0 max-w-full w-[680px] max-md:mt-0 max-md:mb-10">
           <div className="flex gap-5 justify-between w-full font-bold max-md:flex-wrap max-md:max-w-full">
             <div className="flex gap-5 text-2xl text-white">
               <img

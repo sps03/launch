@@ -19,7 +19,7 @@ const Airdroplist = () => {
 
       {/* 2nd */}
       <div>
-        <div className="mt-14 max-md:mt-10 max-md:max-w-full">
+        <div className="mt-14 w-[1240px] max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
               <div className="flex grow justify-center items-center px-16 py-10 w-full border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5 max-md:mt-10 max-md:max-w-full">

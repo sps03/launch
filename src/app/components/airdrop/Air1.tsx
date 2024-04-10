@@ -13,7 +13,7 @@ const Air1 = () => {
   return (
     <div className='p-8'>
       <div className="text-3xl myfont text-white max-w-[285px]">Create New Airdrop</div>
-      <div className="flex flex-col myfont px-11 py-11 text-xs mt-10 font-bold border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5">
+      <div className="flex flex-col myfont px-11 py-11 w-[1240px] text-xs mt-10 font-bold border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5">
         <div className="text-xl leading-4 text-white max-md:max-w-full">
           Token or LP Token Address
         </div>

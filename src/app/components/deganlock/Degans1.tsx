@@ -71,7 +71,7 @@ const Degans1 = () => {
         <div>
           {/* <Header /> */}
         </div>
-      <div className="flex  flex-col px-11 py-12 text-base leading-4 w-[1200px] border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5">
+      <div className="flex  flex-col px-11 py-12 text-base leading-4 w-[1240px]  border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:px-5">
         <div className="text-2xl text-white max-md:max-w-full">
           Current Presales
         </div>

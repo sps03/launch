@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react';
+import Sidebar from './Sidebar';
+import Sidebar2 from './Sidebar2';
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -33,16 +35,18 @@ const Header = () => {
             />
           </div>
         </div>
-        <div className='flex  gap-3 sm:hidden'>
+        <div className='flex gap-3 sm:hidden'>
           <button  onClick={handleSidebarToggle}
-           className='w-full'>
+           className='w-full h-full'>
            <img src="/degansm.png" alt="" 
               className=' flex sm:hidden w-full h-full justify-start'
             />
           </button>
+          <a href="/">
             <img src="/smdp.png" alt="" 
-              className=' flex sm:hidden w-full h-full justify-start'
+              className=' flex sm:hidden w-full h-full '
             />
+          </a>
         </div>
         <div className="flex gap-3 justify-end align-end  text-xs font-bold text-white max-md:flex-wrap">
           <a href='' className="justify-center hidden sm:flex px-9 py-5 bg-zinc-900 rounded-[50px] max-md:px-5">
@@ -57,11 +61,16 @@ const Header = () => {
             <a href='' className="my-auto">Harmony.com</a>
           </div>
           
-          <a href='' className="sm:justify-center p-4 flex justify-end sm:flex sm:px-9 sm:py-5 whitespace-nowrap bg-purple-600 rounded-[50px] max-md:px-5  ">
+          <a href='' className="sm:justify-center  py-5 px-5 flex justify-end sm:flex sm:px-9 sm:py-5 whitespace-nowrap bg-purple-600 rounded-[50px] max-md:px-5  ">
             Connect
           </a>
         </div>
       </div>
+      {isSidebarOpen && (
+        <div className="fixed top-0 overflow-y-auto left-0 w-[240px] h-full bg-black z-50">
+          <div className=""><Sidebar2 /></div>
+        </div>
+      )}
     </div>
   );
 };

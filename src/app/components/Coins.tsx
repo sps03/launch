@@ -2,7 +2,7 @@ import React from 'react'
 
 const Coins = () => {
   return (
-    <div className='sm:flex sm:flex-row p-4 overflow-x-auto justify-center gap-5'>
+    <div className='sm:flex  sm:flex-row sm:p-4 sm:w-full whitespace-nowrap w-[350px] flex gap-3 px-6 py-4 overflow-x-auto scrollbar-hidden sm:justify-center sm:gap-5'>
       <div className="flex flex-col px-5 py-6 border-solid bg-zinc-900 border-[6px] border-zinc-700 w-[100%]  mt-4 sm:w-[290px] rounded-[30px]">
         <div className="flex flex-col justify-center bg-white rounded-3xl">
           <img

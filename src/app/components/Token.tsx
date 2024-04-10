@@ -4,8 +4,8 @@ const Token = () => {
   return (
     <div>
       {/* 1sthalf */}
-    <div className=' sm:flex flex-col flex justify-center px-12 py-4 pt-4 sm:gap-5'>
-      <div className="flex flex-col justify-center text-center border-solid bg-zinc-900 border-[6px] border-zinc-700 w-[290px] sm:w-[290px] rounded-[30px]">
+    <div className=' sm:flex sm:flex-row flex-col flex justify-center px-12 py-4 pt-4 sm:gap-5'>
+      <div className="flex flex-col justify-center text-center mt-4 border-solid bg-zinc-900 border-[6px] border-zinc-700 w-[290px] sm:w-[290px] rounded-[30px]">
         <div className="flex overflow-hidden relative flex-col items-center px-8 pt-5 pb-20 w-full aspect-[0.82] fill-zinc-700">
           <img
             loading="lazy"

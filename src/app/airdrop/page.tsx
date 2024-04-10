@@ -8,7 +8,7 @@ import Airdropopen from '../components/airdrop/Airdropopen'
 
 const page = () => {
   return (
-    <div className='flex flex-row bg-black'>
+    <div className='flex flex-row bg-black '>
       <Sidebar />
       <div>
         <div className='w-full'>

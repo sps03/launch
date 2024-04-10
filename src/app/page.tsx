@@ -9,18 +9,18 @@ import Bloacks from "./components/Bloacks";
 
 export default function Home() {
   return (
-    <div className='bg-black'>
-    <div className='flex flex-row justify-center '>
+    <div className='bg-black w-full mb-16'>
+    <div className='flex flex-row  justify-center overflow-hidden'>
      
       <Sidebar />
       <div>
        <Header />
        <Crypto />
        
-        <div className="sm:text-5xl text-3xl myfont sm:flex sm:justify-center mt-6 flex text-center justify-center sm:mt-12 sm:p-4 text-white ">
+        <div className="sm:text-5xl text-3xl  myfont sm:flex sm:justify-center mt-6 px-6 flex text-center justify-center sm:mt-12 sm:p-4 text-white ">
             The Launchpad Protocol for everyone!
           </div>
-        <div className="text-base flex px-4 myfont  sm:flex text-center justify-center sm:justify-center items-center text-zinc-700">
+        <div className="text-base flex px-6 myfont  sm:flex text-center justify-center sm:justify-center items-center text-zinc-700">
           Harmony Launcher helps everyone to create their own tokens and token sales
           in few seconds.
           <br />
@@ -35,22 +35,25 @@ export default function Home() {
             Learn More
           </a>
         </div>
-       
+       <div className="px-4">
         <Bloacks />
-        <div className="text-5xl text-white justify-start myfont p-4 sm:p-8">Coins</div>
-        <Coins />
+        </div>
+        <div className="text-5xl px-10 text-white justify-start myfont sm:px-14 p-4 sm:p-8">Coins</div>
+        <div className="px-2">
+          <Coins />
+        </div>
         <div className='sm:flex hidden justify-center p-4'>
-          <img src="/table2.png" alt=""  className='w-full p-2 '/>
+          <img src="/table2.png" alt=""  className='w-[1230px] p-2 '/>
         </div>
 
-        <div className='sm:hidden flex justify-center p-2'>
+        <div className='sm:hidden flex justify-center px-6'>
           <img src="/tablesm.png" alt=""  className='w-full p-2 '/>
         </div>
 
-        <div className='sm:justify-start text-white myfont mt-16 text-center justify-center flex myfont p-4 sm:p-8 text-3xl'>
+        <div className='sm:justify-start text-white myfont mt-16 text-center justify-center flex myfont px-4 sm:px-14 text-3xl'>
           A Suite of Tools for Token Sales.
         </div>
-        <div className="text-base text-center sm:text-left justify-center sm:px-8 px-4 text-zinc-700">
+        <div className="text-base text-center sm:text-left justify-center sm:px-14 px-8 text-zinc-700">
           A suite of tools were built to help you create your own tokens and
           launchpads in a fast, simple <br />and cheap way, with no prior code knowledge
           required and 100% decentralized!
@@ -109,14 +112,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sm:hidden mt-10 flex flex-col justify-center p-4'>
+        <div className='sm:hidden mt-10 flex flex-col px-6 justify-center p-4'>
           {/* 1sthalfsm */}
           <div>
             <img src="/framesm.png" alt=""  className='w-full p-2 '/>
           </div>
           {/* 2ndhalfsm */}
           <div>
-          <div className="flex flex-col text-xl w-800px text-zinc-600 max-md:mt-10">
+          <div className="flex flex-col text-xl px-4 w-800px text-zinc-600 max-md:mt-10">
               <div className="text-2xl myfont text-purple-600">How it Works ?</div>
               <div className="mt-7 myfont text-5xl text-white">from idea to launch</div>
               <div className="flex myfont gap-5 mt-14 text-purple-500 max-md:mt-10">
@@ -159,10 +162,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sm:justify-start mt-16 text-center text-white justify-center flex p-4 myfont sm:p-8 text-3xl'>
+        <div className='sm:justify-start mt-16 text-center text-white justify-center flex p-4 px-6 myfont sm:px-14 text-3xl'>
           A Growing Protocol Ecosystem
         </div>
-        <div className="text-base text-center sm:text-left justify-center sm:px-8 px-4 text-zinc-700">
+        <div className="text-base text-center sm:text-left justify-center sm:px-14 px-6 text-zinc-700">
           A suite of tools were built to help you create your own tokens and
           launchpads in a fast, simple <br />and cheap way, with no prior code knowledge
           required and 100% decentralized!
@@ -176,9 +179,10 @@ export default function Home() {
 
     </div>
     <div>
-     <div className='sm:justify-start p-2 text-white' style={{backgroundImage: '/degansm', backgroundRepeat: 'no-repeat', backgroundSize: '100%'}}>
-      <img src="/degansm" alt="" />
-     </div>
+    {/* <div className='sm:justify-start p-2 text-white' style={{backgroundImage: 'url(/degansm.png)', backgroundRepeat: 'no-repeat', backgroundSize: '100%'}}>
+      <img src="/degansm.png" alt="Background Image" />
+    </div> */}
+
      </div>
     </div>
   );

@@ -13,7 +13,7 @@ const page = () => {
           <Header />
         </div>
 
-        {/* <Lplist /> */}
+        <Lplist />
         <Lplistmain />
 
       </div>

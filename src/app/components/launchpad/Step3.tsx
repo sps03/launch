@@ -2,7 +2,20 @@ import React from 'react';
 import Sidebar from '../Sidebar';
 import Header from '../Header';
 
-const Step3 = () => {
+interface StepProps {
+  onNextStep: () => void;
+  previousStep: () => void;
+}
+
+const Step3 : React.FC<StepProps> = ({ onNextStep, previousStep }) => {
+
+  const handleNextStep = () => {
+    onNextStep();
+  };
+  const handlePreviousStep = () => {
+    previousStep() // Move to the previous step
+  };
+
   return (
     <div className='flex p-8 flex-row gap-3'>
       {/* <Sidebar /> */}
@@ -18,7 +31,7 @@ const Step3 = () => {
         <div className="flex flex-col grow shrink-0 basis-0 w-[50%]">
       <div className="flex gap-3">
         <div className="flex flex-col text-base font-bold leading-8 text-center text-white whitespace-nowrap">
-          <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+          <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
             1
           </div>
           <img
@@ -37,7 +50,7 @@ const Step3 = () => {
         </div>
       </div>
       <div className="flex gap-3">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
           2
         </div>
         <div className="flex-auto my-auto text-xl font-bold leading-4 text-white">
@@ -56,7 +69,7 @@ const Step3 = () => {
         </div>
       </div>
       <div className="flex gap-3">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm bg-purple-600 font-medium leading-7 text-center text-white whitespace-nowrap rounded-full border border-solid  border-slate-600 stroke-[1px]">
           3
         </div>
         <div className="flex-auto my-auto text-xl font-bold leading-4 text-white">
@@ -72,7 +85,7 @@ const Step3 = () => {
         <div className="flex-auto self-start">Let people know who you are</div>
       </div>
       <div className="flex gap-3 self-start whitespace-nowrap">
-        <div className="justify-center items-center px-4 w-10 h-10 text-sm font-medium leading-7 text-center text-white rounded-full border border-solid bg-slate-600 border-slate-600 stroke-[1px]">
+        <div className="justify-center items-center px-3.5 py-1.5 w-10 h-10 text-sm font-medium leading-7 text-center text-white rounded-full border border-solid bg-slate-600 border-slate-600 stroke-[1px]">
           4
         </div>
         <div className="my-auto text-xl font-bold leading-4 text-white">
@@ -153,9 +166,9 @@ const Step3 = () => {
               </div>
             </div>
           </div>
-          <div className="mt-11 text-xl leading-4 text-white max-md:mt-10 max-md:max-w-full">
-            Reddit
-          </div>
+            <div className="mt-11 text-xl leading-4 text-white max-md:mt-10 max-md:max-w-full">
+              Reddit
+            </div>
           <div className="justify-center items-start px-3.5 py-6 mt-4 text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 max-md:pr-5 max-md:max-w-full">
             <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
           </div>
@@ -166,7 +179,16 @@ const Step3 = () => {
         <div className="items-start myfont  px-3.5 pt-6 pb-28 mt-4 max-w-full text-base font-medium leading-4 text-white rounded-2xl border-4 border-solid bg-zinc-900 border-zinc-700 w-full max-md:pr-5">
           <input type="text" placeholder="Ex: DeganMoon" className="bg-zinc-900 text-white placeholder-zinc-700 px-3 py-1 rounded-lg outline-none border-none" />
         </div>
+        <div className="flex gap-3  self-center mt-11 text-xs font-bold text-white whitespace-nowrap max-md:mt-10">
+        <button onClick={handlePreviousStep} className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
+          Back
+        </button>
+        <button onClick={handleNextStep} className="justify-center px-9 py-5 bg-purple-600 rounded-[50px] max-md:px-5">
+          Next
+        </button>
       </div>
+      </div>
+     
       </div>
       </div>
     </div>

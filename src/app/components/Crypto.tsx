@@ -2,8 +2,8 @@ import React from 'react'
 
 const Crypto = () => {
   return (
-    <div className='hidden overflow-x-auto whitespace-nowrap scrollbar-hidden sm:flex flex-row gap-3'>
-      <div className="flex gap-3 items-center  py-1.5 pl-3.5 ml-8 justify-start text-sm w-[240px] text-white bg-zinc-900 rounded-[160px]">
+    <div className='whitespace-nowrap w-[350px] sm:w-full overflow-x-auto scrollbar-hidden sm:flex flex gap-3' style={{ transition: 'transform 0.3s ease' }}>
+      <div className="flex gap-3 items-center  py-1.5 pl-3.5 ml-8 justify-start text-sm w-full sm:w-[240px] text-white bg-zinc-900 rounded-[160px]">
         <div className="self-stretch my-auto">COC</div>
         <div className="self-stretch my-auto">$ 9.00.000</div>
         <div className="flex gap-1 self-stretch text-green-400 whitespace-nowrap">
@@ -16,7 +16,7 @@ const Crypto = () => {
         </div>
       </div>
 
-      <div className="flex gap-3 items-center px-3.5 py-1.5 justify-start w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
+      <div className="flex gap-3 items-center px-3.5 py-1.5 justify-start w-full sm:w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
         <div className="self-stretch my-auto">COC</div>
         <div className="self-stretch my-auto">$ 9.00.000</div>
         <div className="flex gap-1 self-stretch text-red-500 whitespace-nowrap">
@@ -29,7 +29,7 @@ const Crypto = () => {
         </div>
       </div>
 
-      <div className="flex gap-3 items-center px-3.5 py-1.5 justify-start w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
+      <div className="flex gap-3 items-center px-3.5 py-1.5 justify-start w-full sm:w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
         <div className="self-stretch my-auto">COC</div>
         <div className="self-stretch my-auto">$ 9.00.000</div>
         <div className="flex gap-1 self-stretch text-purple-600 whitespace-nowrap">
@@ -42,7 +42,7 @@ const Crypto = () => {
         </div>
       </div>
 
-      <div className="flex gap-3 items-center px-3.5 py-1.5justify-start w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
+      <div className="flex gap-3 items-center px-3.5 py-1.5justify-start w-full sm:w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
         <div className="self-stretch my-auto">COC</div>
         <div className="self-stretch my-auto">$ 9.00.000</div>
         <div className="flex gap-1 self-stretch text-red-500 whitespace-nowrap">
@@ -55,7 +55,7 @@ const Crypto = () => {
         </div>
       </div>
 
-      <div className="flex gap-3 items-center px-3.5 py-1.5 justify-start w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
+      <div className="flex gap-3 items-center px-3.5 py-1.5 justify-start w-full sm:w-[240px] text-sm text-white bg-zinc-900 rounded-[160px]">
         <div className="self-stretch my-auto">COC</div>
         <div className="self-stretch my-auto">$ 9.00.000</div>
         <div className="flex gap-1 self-stretch text-green-400 whitespace-nowrap">

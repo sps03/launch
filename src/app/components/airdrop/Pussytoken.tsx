@@ -32,9 +32,9 @@ const Pussytoken = () => {
               <img src="/pussyvector.png" alt="" className='py-2' />
               <div className="flex gap-5 justify-between mt-6">
                 <div className="my-auto text-neutral-500">Starts In:</div>
-                <div className="justify-center px-10 py-5 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-10 py-5 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
                   View Airdrop
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -67,9 +67,9 @@ const Pussytoken = () => {
               <img src="/pussyvector.png" alt="" className='py-2' />
               <div className="flex gap-5 justify-between mt-6">
                 <div className="my-auto text-neutral-500">Starts In:</div>
-                <div className="justify-center px-10 py-5 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-10 py-5 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
                   View Airdrop
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -104,9 +104,9 @@ const Pussytoken = () => {
               <img src="/pussyvector.png" alt="" className='py-2' />
               <div className="flex gap-5 justify-between mt-6">
                 <div className="my-auto text-neutral-500">Starts In:</div>
-                <div className="justify-center px-10 py-5 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
+                <a href='' className="justify-center px-10 py-5 font-bold text-white bg-fuchsia-500 rounded-[50px] max-md:px-5">
                   View Airdrop
-                </div>
+                </a>
               </div>
             </div>
           </div>
