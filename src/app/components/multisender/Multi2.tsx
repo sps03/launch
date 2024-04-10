@@ -1,6 +1,14 @@
 import React from 'react'
 
-const Multi2 = () => {
+interface Step1Props {
+  previousStep: () => void; // Define the type of onNextStep
+}
+
+const Multi2: React.FC<Step1Props> = ({ previousStep }) => {
+
+  const handlePreviousStep = () => {
+    previousStep() 
+  };
   return (
     <div className='px-10'>
       <div className="flex flex-col px-9 mt-2 py-11 border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] w-[1230px] max-md:px-5">
@@ -106,9 +114,9 @@ const Multi2 = () => {
         </div>
       </div>
       <div className="flex mt-5 gap-3 self-center text-xs font-bold text-white whitespace-nowrap">
-        <a href='' className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
+      <button onClick={handlePreviousStep} className="justify-center px-9 py-5 bg-zinc-700 rounded-[50px] max-md:px-5">
           Back
-        </a>
+        </button>
         <a href='' className="justify-center px-9 py-5 bg-fuchsia-500 rounded-[50px] max-md:px-5">
           Next
         </a>

@@ -1,6 +1,14 @@
 import React from 'react';
 
-const Multi1 = () => {
+interface Step1Props {
+  onNextStep: () => void; // Define the type of onNextStep
+}
+
+const Multi1: React.FC<Step1Props> = ({ onNextStep }) => {
+
+  const handleNextStep = () => {
+    onNextStep(); // Call the callback function to proceed to the next step
+  };
   return (
     <div className='px-10'>
       <div className="flex gap-5 justify-between items-start px-9 py-12 border-solid bg-zinc-900 border-[6px] border-zinc-700 rounded-[30px] max-md:flex-wrap max-md:px-5">
@@ -69,9 +77,9 @@ const Multi1 = () => {
             tokens.
           </div>
           <div className="flex gap-5 justify-between px-px mt-8 w-full font-bold max-md:flex-wrap max-md:max-w-full">
-            <a href='' className="justify-center px-9 py-5 text-xs text-white whitespace-nowrap bg-fuchsia-500 rounded-[50px] max-md:px-5">
-              Next
-            </a>
+          <button onClick={handleNextStep} className="justify-center self-start px-9 py-5 mt-11 text-s font-bold text-white whitespace-nowrap bg-purple-600 rounded-[50px] max-md:px-5 max-md:mt-10">
+            Next
+          </button>
             <div className="flex gap-4">
               <a href='' className="justify-center myfont px-9 py-5 text-xs text-white bg-zinc-700 rounded-[50px] max-md:px-5">
                 Or Choose From CSV file

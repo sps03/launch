@@ -1,10 +1,20 @@
-import React from 'react'
+'use client'
+import React,{ useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
 import Multi1 from '../components/multisender/Multi1'
 import Multi2 from '../components/multisender/Multi2'
 
 const page = () => {
+  const [currentStep, setCurrentStep] = useState(1);
+
+  const handleNextStep = () => {
+    setCurrentStep(currentStep + 1); // Move to the next step
+  };
+  const handlePreviousStep = () => {
+    setCurrentStep(currentStep - 1); // Move to the previous step
+  };
+  
   return (
     <div>
       <div className='flex flex-row bg-black'>
@@ -14,8 +24,8 @@ const page = () => {
             <Header />
           </div>
 
-            <Multi1 />
-            <Multi2 />
+          {currentStep === 1 && <Multi1 onNextStep={handleNextStep} />}
+        {currentStep === 2 && <Multi2  previousStep={handlePreviousStep} />}
 
         </div>
     </div>
