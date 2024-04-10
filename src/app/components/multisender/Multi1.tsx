@@ -81,10 +81,10 @@ const Multi1: React.FC<Step1Props> = ({ onNextStep }) => {
             Next
           </button>
             <div className="flex gap-4">
-              <a href='' className="justify-center myfont px-9 py-5 text-xs text-white bg-zinc-700 rounded-[50px] max-md:px-5">
+              <a href='' className="justify-center self-start px-9 py-5 mt-11 text-xs font-bold text-white bg-zinc-700 rounded-[50px] max-md:px-5">
                 Or Choose From CSV file
               </a>
-              <div className="flex-auto my-auto text-base text-purple-600">
+              <div className="justify-center self-start px-5 py-5 mt-11 text-base font-bold text-purple-600">
                 Sample CSV file
               </div>
             </div>
